@@ -1,0 +1,13 @@
+[Unit]
+Description=homeautomation node.js app to make the world great again!
+Documentation=https://www.homeautomation.com
+After=network.target 
+
+[Service]
+Type=simple
+User=username
+ExecStart=/usr/bin/node /var/www/html/homeautomation/index.js
+
+
+[Install]
+WantedBy=multi-user.target

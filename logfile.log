@@ -1,0 +1,27 @@
+{"level":"info","message":"TCP Server is running on port 1337","timestamp":"2020-04-04T06:02:27.332Z"}
+{"level":"info","message":"Listening on port 8080","timestamp":"2020-04-04T06:02:27.340Z"}
+{"level":"info","message":"CONNECTED: ::ffff:127.0.0.1 : 60402","timestamp":"2020-04-04T07:08:10.166Z"}
+{"level":"info","message":"CLOSED: ::ffff:127.0.0.1 : 60402","timestamp":"2020-04-04T07:08:37.510Z"}
+{"level":"info","message":"TCP Server is running on port 1337","timestamp":"2020-04-04T16:50:56.066Z"}
+{"level":"info","message":"Listening on port 8080","timestamp":"2020-04-04T16:50:56.081Z"}
+{"level":"info","message":"CONNECTED: ::ffff:127.0.0.1 : 61936","timestamp":"2020-04-04T16:56:35.517Z"}
+{"level":"info","message":"CLOSED: ::ffff:127.0.0.1 : 61936","timestamp":"2020-04-04T16:59:04.497Z"}
+{"level":"info","message":"CLOSED: ::ffff:127.0.0.1 : 61936","timestamp":"2020-04-04T16:59:04.497Z"}
+{"level":"info","message":"CONNECTED: ::ffff:127.0.0.1 : 61949","timestamp":"2020-04-04T17:01:14.428Z"}
+{"level":"info","message":"CLOSED: ::ffff:127.0.0.1 : 61949","timestamp":"2020-04-04T17:02:09.435Z"}
+{"level":"info","message":"CLOSED: ::ffff:127.0.0.1 : 61949","timestamp":"2020-04-04T17:02:09.436Z"}
+{"level":"info","message":"CONNECTED: ::ffff:127.0.0.1 : 61953","timestamp":"2020-04-04T17:02:09.784Z"}
+{"level":"info","message":"CLOSED: ::ffff:127.0.0.1 : 61953","timestamp":"2020-04-04T17:02:13.130Z"}
+{"level":"info","message":"CLOSED: ::ffff:127.0.0.1 : 61953","timestamp":"2020-04-04T17:02:13.130Z"}
+{"level":"info","message":"CONNECTED: ::ffff:127.0.0.1 : 61955","timestamp":"2020-04-04T17:02:13.459Z"}
+{"level":"info","message":"CLOSED: ::ffff:127.0.0.1 : 61955","timestamp":"2020-04-04T17:02:59.895Z"}
+{"level":"info","message":"CLOSED: ::ffff:127.0.0.1 : 61955","timestamp":"2020-04-04T17:02:59.895Z"}
+{"level":"info","message":"CONNECTED: ::ffff:127.0.0.1 : 61961","timestamp":"2020-04-04T17:03:50.794Z"}
+{"level":"info","message":"CLOSED: ::ffff:127.0.0.1 : 61961","timestamp":"2020-04-04T17:05:40.892Z"}
+{"level":"info","message":"CLOSED: ::ffff:127.0.0.1 : 61961","timestamp":"2020-04-04T17:05:40.892Z"}
+{"level":"info","message":"CONNECTED: ::ffff:127.0.0.1 : 61972","timestamp":"2020-04-04T17:06:19.843Z"}
+{"level":"info","message":"CLOSED: ::ffff:127.0.0.1 : 61972","timestamp":"2020-04-04T17:06:43.011Z"}
+{"level":"info","message":"CLOSED: ::ffff:127.0.0.1 : 61972","timestamp":"2020-04-04T17:06:43.011Z"}
+{"level":"info","message":"CONNECTED: ::ffff:127.0.0.1 : 61981","timestamp":"2020-04-04T17:07:57.299Z"}
+{"level":"info","message":"CLOSED: ::ffff:127.0.0.1 : 61981","timestamp":"2020-04-04T17:09:38.930Z"}
+{"level":"info","message":"CLOSED: ::ffff:127.0.0.1 : 61981","timestamp":"2020-04-04T17:09:38.930Z"}
