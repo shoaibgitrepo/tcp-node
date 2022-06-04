@@ -1,27 +1,18 @@
-{"level":"info","message":"TCP Server is running on port 1337","timestamp":"2020-04-04T06:02:27.332Z"}
-{"level":"info","message":"Listening on port 8080","timestamp":"2020-04-04T06:02:27.340Z"}
-{"level":"info","message":"CONNECTED: ::ffff:127.0.0.1 : 60402","timestamp":"2020-04-04T07:08:10.166Z"}
-{"level":"info","message":"CLOSED: ::ffff:127.0.0.1 : 60402","timestamp":"2020-04-04T07:08:37.510Z"}
-{"level":"info","message":"TCP Server is running on port 1337","timestamp":"2020-04-04T16:50:56.066Z"}
-{"level":"info","message":"Listening on port 8080","timestamp":"2020-04-04T16:50:56.081Z"}
-{"level":"info","message":"CONNECTED: ::ffff:127.0.0.1 : 61936","timestamp":"2020-04-04T16:56:35.517Z"}
-{"level":"info","message":"CLOSED: ::ffff:127.0.0.1 : 61936","timestamp":"2020-04-04T16:59:04.497Z"}
-{"level":"info","message":"CLOSED: ::ffff:127.0.0.1 : 61936","timestamp":"2020-04-04T16:59:04.497Z"}
-{"level":"info","message":"CONNECTED: ::ffff:127.0.0.1 : 61949","timestamp":"2020-04-04T17:01:14.428Z"}
-{"level":"info","message":"CLOSED: ::ffff:127.0.0.1 : 61949","timestamp":"2020-04-04T17:02:09.435Z"}
-{"level":"info","message":"CLOSED: ::ffff:127.0.0.1 : 61949","timestamp":"2020-04-04T17:02:09.436Z"}
-{"level":"info","message":"CONNECTED: ::ffff:127.0.0.1 : 61953","timestamp":"2020-04-04T17:02:09.784Z"}
-{"level":"info","message":"CLOSED: ::ffff:127.0.0.1 : 61953","timestamp":"2020-04-04T17:02:13.130Z"}
-{"level":"info","message":"CLOSED: ::ffff:127.0.0.1 : 61953","timestamp":"2020-04-04T17:02:13.130Z"}
-{"level":"info","message":"CONNECTED: ::ffff:127.0.0.1 : 61955","timestamp":"2020-04-04T17:02:13.459Z"}
-{"level":"info","message":"CLOSED: ::ffff:127.0.0.1 : 61955","timestamp":"2020-04-04T17:02:59.895Z"}
-{"level":"info","message":"CLOSED: ::ffff:127.0.0.1 : 61955","timestamp":"2020-04-04T17:02:59.895Z"}
-{"level":"info","message":"CONNECTED: ::ffff:127.0.0.1 : 61961","timestamp":"2020-04-04T17:03:50.794Z"}
-{"level":"info","message":"CLOSED: ::ffff:127.0.0.1 : 61961","timestamp":"2020-04-04T17:05:40.892Z"}
-{"level":"info","message":"CLOSED: ::ffff:127.0.0.1 : 61961","timestamp":"2020-04-04T17:05:40.892Z"}
-{"level":"info","message":"CONNECTED: ::ffff:127.0.0.1 : 61972","timestamp":"2020-04-04T17:06:19.843Z"}
-{"level":"info","message":"CLOSED: ::ffff:127.0.0.1 : 61972","timestamp":"2020-04-04T17:06:43.011Z"}
-{"level":"info","message":"CLOSED: ::ffff:127.0.0.1 : 61972","timestamp":"2020-04-04T17:06:43.011Z"}
-{"level":"info","message":"CONNECTED: ::ffff:127.0.0.1 : 61981","timestamp":"2020-04-04T17:07:57.299Z"}
-{"level":"info","message":"CLOSED: ::ffff:127.0.0.1 : 61981","timestamp":"2020-04-04T17:09:38.930Z"}
-{"level":"info","message":"CLOSED: ::ffff:127.0.0.1 : 61981","timestamp":"2020-04-04T17:09:38.930Z"}
+{"level":"info","message":"CLOSED: ::ffff:139.167.177.61 : 53437","timestamp":"2022-06-04T08:04:02.923Z"}
+{"level":"info","message":"CONNECTED: ::ffff:139.167.177.61 : 53454","timestamp":"2022-06-04T08:04:04.839Z"}
+{"level":"info","message":"DATA: k","timestamp":"2022-06-04T08:04:28.089Z"}
+{"level":"info","message":"DATA: a","timestamp":"2022-06-04T08:04:29.736Z"}
+{"level":"info","message":"DATA: sd","timestamp":"2022-06-04T08:04:29.803Z"}
+{"level":"info","message":"DATA: lf","timestamp":"2022-06-04T08:04:29.868Z"}
+{"level":"info","message":"DATA: ui","timestamp":"2022-06-04T08:04:29.943Z"}
+{"level":"info","message":"DATA: h","timestamp":"2022-06-04T08:04:30.008Z"}
+{"level":"info","message":"DATA: o","timestamp":"2022-06-04T08:04:30.078Z"}
+{"level":"info","message":"TCP Server is running on port 1337","timestamp":"2022-06-04T08:18:03.189Z"}
+{"level":"info","message":"Listening on port 8080","timestamp":"2022-06-04T08:18:03.191Z"}
+{"level":"info","message":"CONNECTED: ::ffff:139.167.177.61 : 54359","timestamp":"2022-06-04T08:19:45.828Z"}
+{"level":"info","message":"DATA: #SP,SHOAIB0000,16:41:26,20/09/2021,\u0001   \u0002\u0001      \u0002\u0015 x r E\u0001�              \u0007�\b\f\u0007�000015900000788800003752000389230000747500000000 �  \u0010R  0000000000290397.+++","timestamp":"2022-06-04T08:19:52.798Z"}
+{"level":"info","message":"DATA: Ikasdjfalsdjfoiahwe","timestamp":"2022-06-04T08:19:59.648Z"}
+{"level":"info","message":"TCP Server is running on port 1337","timestamp":"2022-06-04T08:25:19.095Z"}
+{"level":"info","message":"Listening on port 8080","timestamp":"2022-06-04T08:25:19.096Z"}
+{"level":"info","message":"CONNECTED: ::ffff:139.167.177.61 : 54713","timestamp":"2022-06-04T08:25:35.792Z"}
+{"level":"info","message":"DATA: Ikasdjfalsdjfoiahwe","timestamp":"2022-06-04T08:25:43.151Z"}
