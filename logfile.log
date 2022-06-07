@@ -1,5 +1,3 @@
-{"level":"info","message":"CLOSED: ::ffff:139.167.177.61 : 53437","timestamp":"2022-06-04T08:04:02.923Z"}
-{"level":"info","message":"CONNECTED: ::ffff:139.167.177.61 : 53454","timestamp":"2022-06-04T08:04:04.839Z"}
 {"level":"info","message":"DATA: k","timestamp":"2022-06-04T08:04:28.089Z"}
 {"level":"info","message":"DATA: a","timestamp":"2022-06-04T08:04:29.736Z"}
 {"level":"info","message":"DATA: sd","timestamp":"2022-06-04T08:04:29.803Z"}
@@ -7,12 +5,8 @@
 {"level":"info","message":"DATA: ui","timestamp":"2022-06-04T08:04:29.943Z"}
 {"level":"info","message":"DATA: h","timestamp":"2022-06-04T08:04:30.008Z"}
 {"level":"info","message":"DATA: o","timestamp":"2022-06-04T08:04:30.078Z"}
-{"level":"info","message":"TCP Server is running on port 1337","timestamp":"2022-06-04T08:18:03.189Z"}
-{"level":"info","message":"Listening on port 8080","timestamp":"2022-06-04T08:18:03.191Z"}
-{"level":"info","message":"CONNECTED: ::ffff:139.167.177.61 : 54359","timestamp":"2022-06-04T08:19:45.828Z"}
 {"level":"info","message":"DATA: #SP,SHOAIB0000,16:41:26,20/09/2021,\u0001   \u0002\u0001      \u0002\u0015 x r E\u0001�              \u0007�\b\f\u0007�000015900000788800003752000389230000747500000000 �  \u0010R  0000000000290397.+++","timestamp":"2022-06-04T08:19:52.798Z"}
 {"level":"info","message":"DATA: Ikasdjfalsdjfoiahwe","timestamp":"2022-06-04T08:19:59.648Z"}
-{"level":"info","message":"TCP Server is running on port 1337","timestamp":"2022-06-04T08:25:19.095Z"}
-{"level":"info","message":"Listening on port 8080","timestamp":"2022-06-04T08:25:19.096Z"}
-{"level":"info","message":"CONNECTED: ::ffff:139.167.177.61 : 54713","timestamp":"2022-06-04T08:25:35.792Z"}
 {"level":"info","message":"DATA: Ikasdjfalsdjfoiahwe","timestamp":"2022-06-04T08:25:43.151Z"}
+{"level":"info","message":"HTTP_DATA: j;asidojfpoiajsdf","timestamp":"2022-06-07T08:32:24.208Z"}
+{"level":"info","message":"TCP_DATA: 123456789","timestamp":"2022-06-07T08:55:28.767Z"}

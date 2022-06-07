@@ -3,6 +3,7 @@ const express = require("express");
 const app = express();
 const net = require("net");
 const server = net.createServer();
+const fs = require('fs');
 
 require("./logging")();
 const clients = [];
@@ -31,8 +32,27 @@ app.get("/api/clients", (req, res) => {
   );
 });
 
+app.get("/logs", (req, res) => {
+  fs.readFile('\logfile.log', 'utf8', (err, data) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    // console.log(data.split("\r\n"));
+
+    const dataInFile = data.split("\r\n").filter((item) => item).map((item) => JSON.parse(item));
+    const response = dataInFile.map(({ message, timestamp }) => `<li style="margin-bottom: 10px;">${timestamp} | ${message}</li>`).reverse().join("");
+
+    console.log(response);
+
+    res.send(`<ol style="font-family: Arial, sans-serif; margin-bottom: 10px">${response}</ol>`);
+  });
+
+})
+
 server.on("connection", (client) => {
-  winston.info(`CONNECTED: ${client.remoteAddress} : ${client.remotePort}`);
+  // winston.info(`CONNECTED: ${client.remoteAddress} : ${client.remotePort}`);
+  console.log(`CONNECTED: ${client.remoteAddress} : ${client.remotePort}`);
   // socket.pipe(socket);
 
   client.dateTime = getDateTime();
@@ -55,7 +75,8 @@ server.on("connection", (client) => {
 
     if (index !== -1) clients.splice(index, 1);
 
-    winston.info(`CLOSED: ${client.remoteAddress} : ${client.remotePort}`);
+    // winston.info(`CLOSED: ${client.remoteAddress} : ${client.remotePort}`);
+    console.log(`CLOSED: ${client.remoteAddress} : ${client.remotePort}`);
   });
 
   client.on("error", () => {
@@ -74,9 +95,11 @@ const portHttp = 8080;
 // const host = '0.0.0.0';
 
 server.listen(portTcp, () => {
-  winston.info(`TCP Server is running on port ${portTcp}`);
+  // winston.info(`TCP Server is running on port ${portTcp}`);
+  console.log(`TCP Server is running on port ${portTcp}`);
 });
 
 app.listen(portHttp, () => {
-  winston.info(`Listening on port ${portHttp}`);
+  // winston.info(`Listening on port ${portHttp}`);
+  console.log(`Listening on port ${portHttp}`);
 });
