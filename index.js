@@ -96,7 +96,7 @@ const port = process.env.PORT || 1337;
 
 server.listen(port, () => {
   // winston.info(`TCP Server is running on port ${portTcp}`);
-  console.log(`TCP Server is running on port ${portTcp}`);
+  console.log(`TCP Server is running on port ${port}`);
 });
 
 // app.listen(portHttp, () => {
