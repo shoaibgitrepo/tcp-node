@@ -88,18 +88,18 @@ server.on("connection", (client) => {
   });
 });
 
-// const port = process.env.PORT || 1337;
-const portTcp = 1337;
-const portHttp = 8080;
+const port = process.env.PORT || 1337;
+// const portTcp = 1337;
+// const portHttp = 8080;
 // const host = '159.65.150.41';
 // const host = '0.0.0.0';
 
-server.listen(portTcp, () => {
+server.listen(port, () => {
   // winston.info(`TCP Server is running on port ${portTcp}`);
   console.log(`TCP Server is running on port ${portTcp}`);
 });
 
-app.listen(portHttp, () => {
-  // winston.info(`Listening on port ${portHttp}`);
-  console.log(`Listening on port ${portHttp}`);
-});
+// app.listen(portHttp, () => {
+//   // winston.info(`Listening on port ${portHttp}`);
+//   console.log(`Listening on port ${portHttp}`);
+// });
