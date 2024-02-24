@@ -20,20 +20,19 @@ const getDateTime = () => {
 };
 
 app.get("/api/clients", (req, res) => {
-  if (clients.length === 0) return res.send("No connections found.");
-
   if (req.query.data) {
     winston.info(`HTTP_GET_DATA: ${req.query.data}`);
     clients.forEach((client) => client.write(req.query.data));
   }
 
-  res.send(
-    clients.map(({ remoteAddress, remotePort, dateTime }) => ({
+  res.send({
+    data: req.query.data,
+    clients: clients.map(({ remoteAddress, remotePort, dateTime }) => ({
       remoteAddress,
       remotePort,
       dateTime,
-    }))
-  );
+    })),
+  });
 });
 
 app.post("/api/post", (req, res) => {
