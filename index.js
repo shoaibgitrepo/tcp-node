@@ -5,8 +5,12 @@ const net = require("net");
 const server = net.createServer();
 const fs = require("fs");
 
+app.use(express.json());
+
 require("./logging")();
 const clients = [];
+
+const logFile = "logfile.log";
 
 const getDateTime = () => {
   const dateTime = new Date();
@@ -19,7 +23,7 @@ app.get("/api/clients", (req, res) => {
   if (clients.length === 0) return res.send("No connections found.");
 
   if (req.query.data) {
-    winston.info(`HTTP_DATA: ${req.query.data}`);
+    winston.info(`HTTP_GET_DATA: ${req.query.data}`);
     clients.forEach((client) => client.write(req.query.data));
   }
 
@@ -32,8 +36,17 @@ app.get("/api/clients", (req, res) => {
   );
 });
 
+app.post("/api/post", (req, res) => {
+  if (req.body) {
+    winston.info(`HTTP_POST_DATA: ${JSON.stringify(req.body)}`);
+    clients.forEach((client) => client.write(JSON.stringify(req.body)));
+  }
+
+  res.send(req.body);
+});
+
 app.get("/api/logs", (req, res) => {
-  fs.readFile("logfile.log", "utf8", (err, data) => {
+  fs.readFile(logFile, "utf8", (err, data) => {
     if (err) {
       console.error(err);
       return;
@@ -57,6 +70,18 @@ app.get("/api/logs", (req, res) => {
     res.send(
       `<ol style="font-family: Arial, sans-serif; margin-bottom: 10px">${response}</ol>`
     );
+  });
+});
+
+app.get("/api/clear", (req, res) => {
+  fs.truncate(logFile, 0, (err) => {
+    if (err) {
+      console.error("Error truncating file:", err);
+      res.send("FAILED");
+    } else {
+      console.log("File data cleared successfully.");
+      res.send("SUCCESS");
+    }
   });
 });
 
