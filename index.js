@@ -44,7 +44,7 @@ app.post("/api/post", (req, res) => {
   res.send(req.body);
 });
 
-app.get("/api/logs", (req, res) => {
+app.get("/api/logshtml", (req, res) => {
   fs.readFile(logFile, "utf8", (err, data) => {
     if (err) {
       console.error(err);
@@ -69,6 +69,28 @@ app.get("/api/logs", (req, res) => {
     res.send(
       `<ol style="font-family: Arial, sans-serif; margin-bottom: 10px">${response}</ol>`
     );
+  });
+});
+
+app.get("/api/logs", (req, res) => {
+  fs.readFile(logFile, "utf8", (err, data) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    // console.log(data.split("\n"));
+
+    const dataInFile = data
+      .split("\n")
+      .filter((item) => item)
+      .map((item) => JSON.parse(item));
+
+    const response = {};
+    dataInFile.reverse().forEach(({ timestamp, message }) => {
+      response[timestamp] = message;
+    });
+
+    res.send(response);
   });
 });
 
