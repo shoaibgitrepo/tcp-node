@@ -32,16 +32,16 @@ app.get("/api/clients", (req, res) => {
   );
 });
 
-app.get("/logs", (req, res) => {
+app.get("/api/logs", (req, res) => {
   fs.readFile("logfile.log", "utf8", (err, data) => {
     if (err) {
       console.error(err);
       return;
     }
-    // console.log(data.split("\r\n"));
+    // console.log(data.split("\n"));
 
     const dataInFile = data
-      .split("\r\n")
+      .split("\n")
       .filter((item) => item)
       .map((item) => JSON.parse(item));
     const response = dataInFile
