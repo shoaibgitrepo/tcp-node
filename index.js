@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 const net = require("net");
 const server = net.createServer();
-const fs = require('fs');
+const fs = require("fs");
 
 require("./logging")();
 const clients = [];
@@ -33,22 +33,32 @@ app.get("/api/clients", (req, res) => {
 });
 
 app.get("/logs", (req, res) => {
-  fs.readFile('\logfile.log', 'utf8', (err, data) => {
+  fs.readFile("logfile.log", "utf8", (err, data) => {
     if (err) {
       console.error(err);
       return;
     }
     // console.log(data.split("\r\n"));
 
-    const dataInFile = data.split("\r\n").filter((item) => item).map((item) => JSON.parse(item));
-    const response = dataInFile.map(({ message, timestamp }) => `<li style="margin-bottom: 10px;">${timestamp} | ${message}</li>`).reverse().join("");
+    const dataInFile = data
+      .split("\r\n")
+      .filter((item) => item)
+      .map((item) => JSON.parse(item));
+    const response = dataInFile
+      .map(
+        ({ message, timestamp }) =>
+          `<li style="margin-bottom: 10px;">${timestamp} | ${message}</li>`
+      )
+      .reverse()
+      .join("");
 
     console.log(response);
 
-    res.send(`<ol style="font-family: Arial, sans-serif; margin-bottom: 10px">${response}</ol>`);
+    res.send(
+      `<ol style="font-family: Arial, sans-serif; margin-bottom: 10px">${response}</ol>`
+    );
   });
-
-})
+});
 
 server.on("connection", (client) => {
   // winston.info(`CONNECTED: ${client.remoteAddress} : ${client.remotePort}`);
@@ -88,18 +98,13 @@ server.on("connection", (client) => {
   });
 });
 
-const port = process.env.PORT || 1337;
-// const portTcp = 1337;
-// const portHttp = 8080;
-// const host = '159.65.150.41';
-// const host = '0.0.0.0';
+const portTcp = 1337;
+const portHttp = 8080;
 
-server.listen(port, () => {
-  // winston.info(`TCP Server is running on port ${portTcp}`);
-  console.log(`TCP Server is running on port ${port}`);
+server.listen(portTcp, () => {
+  winston.info(`TCP Server is running on port ${portTcp}`);
 });
 
-// app.listen(portHttp, () => {
-//   // winston.info(`Listening on port ${portHttp}`);
-//   console.log(`Listening on port ${portHttp}`);
-// });
+app.listen(portHttp, () => {
+  winston.info(`Listening on port ${portHttp}`);
+});
